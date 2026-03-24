@@ -1,9 +1,18 @@
 package com.orbytex.pixbuddy.listners;
 
+import com.orbytex.pixbuddy.ai.AIService;
 import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
+import org.springframework.stereotype.Component;
 
+@Component
 public class PixBuddyListener extends ListenerAdapter {
+
+    private final AIService aiService;
+
+    public PixBuddyListener(AIService aiService) {
+        this.aiService = aiService;
+    }
 
     @Override
     public void onMessageReceived(MessageReceivedEvent event) {
@@ -12,18 +21,16 @@ public class PixBuddyListener extends ListenerAdapter {
 
         String message = event.getMessage().getContentRaw();
 
-        if (message.equalsIgnoreCase("!ping")) {
-            event.getChannel().sendMessage("PixBuddy is alive 🚀").queue();
-        }
+        event.getChannel().sendTyping().queue();
 
-        if (message.equalsIgnoreCase("!help")) {
-            event.getChannel().sendMessage("""
-                    🤖 PixBuddy Help
-                    
-                    !help - Show commands
-                    !ping - Check bot status
-                    
-                    """).queue();
-        }
+        new Thread(() -> {
+
+            String response = aiService.getResponse(message);
+
+            event.getChannel()
+                    .sendMessage(response)
+                    .queue();
+
+        }).start();
     }
 }
