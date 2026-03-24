@@ -11,6 +11,8 @@ public class Config {
 
     private final PixBuddyListener pixBuddyListener;
 
+
+
     public Config(PixBuddyListener pixBuddyListener) {
         this.pixBuddyListener = pixBuddyListener;
     }
@@ -18,8 +20,15 @@ public class Config {
     @PostConstruct
     public void startBot() throws Exception {
 
-        Dotenv dotenv = Dotenv.load();
-        String token = dotenv.get("DISCORD_TOKEN");
+        Dotenv dotenv = Dotenv.configure()
+                .ignoreIfMissing()
+                .load();
+
+        String token = System.getenv("DISCORD_TOKEN");
+
+        if (token == null) {
+            token = dotenv.get("DISCORD_TOKEN");
+        }
 
         if (token == null || token.isBlank()) {
             throw new RuntimeException("DISCORD_TOKEN not set");
