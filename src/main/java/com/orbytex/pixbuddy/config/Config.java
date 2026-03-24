@@ -2,15 +2,11 @@ package com.orbytex.pixbuddy.config;
 
 import jakarta.annotation.PostConstruct;
 import net.dv8tion.jda.api.JDABuilder;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 import com.orbytex.pixbuddy.listners.PixBuddyListener;
 
 @Configuration
 public class Config {
-
-    @Value("${spring.discord.bot.token}")
-    private String token;
 
     private final PixBuddyListener pixBuddyListener;
 
@@ -20,6 +16,12 @@ public class Config {
 
     @PostConstruct
     public void startBot() throws Exception {
+        String token = System.getenv("DISCORD_TOKEN");
+
+        if (token == null || token.isBlank()) {
+            throw new RuntimeException("DISCORD_TOKEN not set");
+        }
+
         JDABuilder.createDefault(token)
                 .addEventListeners(pixBuddyListener)
                 .build();
