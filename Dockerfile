@@ -1,0 +1,7 @@
+FROM eclipse-temurin:21-jdk
+
+WORKDIR /app
+
+COPY pixbuddy-v1.0.3.jar app.jar
+
+ENTRYPOINT ["java","-jar","app.jar"]
