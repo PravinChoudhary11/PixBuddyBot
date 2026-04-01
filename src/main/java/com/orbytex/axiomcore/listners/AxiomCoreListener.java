@@ -1,6 +1,6 @@
-package com.orbytex.AxiomCore.listners;
+package com.orbytex.axiomcore.listners;
 
-import com.orbytex.AxiomCore.ai.AIService;
+import com.orbytex.axiomcore.ai.AIService;
 import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 import org.springframework.stereotype.Component;

@@ -1,10 +1,10 @@
-package com.orbytex.AxiomCore.config;
+package com.orbytex.axiomcore.config;
 
 import io.github.cdimascio.dotenv.Dotenv;
 import jakarta.annotation.PostConstruct;
 import net.dv8tion.jda.api.JDABuilder;
 import org.springframework.context.annotation.Configuration;
-import com.orbytex.AxiomCore.listners.AxiomCoreListener;
+import com.orbytex.axiomcore.listners.AxiomCoreListener;
 
 @Configuration
 public class Config {

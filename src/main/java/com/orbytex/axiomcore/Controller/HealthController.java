@@ -1,4 +1,4 @@
-package com.orbytex.AxiomCore.Controller;
+package com.orbytex.axiomcore.Controller;
 
 
 import org.springframework.web.bind.annotation.GetMapping;

@@ -1,4 +1,4 @@
-package com.orbytex.AxiomCore.ai;
+package com.orbytex.axiomcore.ai;
 
 import okhttp3.*;
 import org.json.JSONArray;
@@ -13,13 +13,13 @@ import java.util.List;
 @Service
 public class AIService {
 
-    @Value("${spring.gemini.AxiomCore.apikey1}")
+    @Value("${spring.gemini.axiom-core.apikey1}")
     private String apiKey1;
 
-    @Value("${spring.gemini.AxiomCore.apikey2}")
+    @Value("${spring.gemini.axiom-core.apikey2}")
     private String apiKey2;
 
-    @Value("${spring.gemini.AxiomCore.apikey3}")
+    @Value("${spring.gemini.axiom-core.apikey3}")
     private String apiKey3;
 
     private final OkHttpClient client = new OkHttpClient.Builder()

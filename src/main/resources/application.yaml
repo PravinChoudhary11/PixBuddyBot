@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: ${SPRING_APPLICATION_NAME}
+  discord:
+    bot:
+      token: ${DISCORD_TOKEN}
+  gemini:
+    axiom-core:
+      apikey1: ${SPRING_GEMINI_AXIOMCORE_APIKEY1}
+      apikey2: ${SPRING_GEMINI_AXIOMCORE_APIKEY2}
+      apikey3: ${SPRING_GEMINI_AXIOMCORE_APIKEY3}

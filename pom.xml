@@ -5,12 +5,12 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.5.12</version>
+		<version>3.5.13</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.orbytex</groupId>
+	<groupId>com.axiom</groupId>
 	<artifactId>axiom-core</artifactId>
-	<version>v1.0.3</version>
+	<version>v1.0.0</version>
 	<name/>
 	<description/>
 	<url/>
@@ -79,7 +79,8 @@
 
     </dependencies>
 
-	<build>
+
+    <build>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>

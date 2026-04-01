@@ -1,4 +1,4 @@
-package com.orbytex.AxiomCore;
+package com.orbytex.axiomcore;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

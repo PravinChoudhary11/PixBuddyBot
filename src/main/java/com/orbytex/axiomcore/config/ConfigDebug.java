@@ -1,4 +1,4 @@
-package com.orbytex.AxiomCore.config;
+package com.orbytex.axiomcore.config;
 
 import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Value;
@@ -13,13 +13,13 @@ public class ConfigDebug {
     @Value("${spring.discord.bot.token:NOT_FOUND}")
     private String discordToken;
 
-    @Value("${spring.gemini.AxiomCore.apikey1:NOT_FOUND}")
+    @Value("${spring.gemini.axiom-core.apikey1:NOT_FOUND}")
     private String geminiKey1;
 
-    @Value("${spring.gemini.AxiomCore.apikey2:NOT_FOUND}")
+    @Value("${spring.gemini.axiom-core.apikey2:NOT_FOUND}")
     private String geminiKey2;
 
-    @Value("${spring.gemini.AxiomCore.apikey3:NOT_FOUND}")
+    @Value("${spring.gemini.axiom-core.apikey3:NOT_FOUND}")
     private String geminiKey3;
 
     @PostConstruct

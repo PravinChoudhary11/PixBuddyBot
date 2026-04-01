@@ -1,141 +1,168 @@
-# 🤖 PixBuddy — Discord Helper Bot
+# Axiom Core
 
-PixBuddy is a **Java-based Discord helper bot** built using **JDA (Java Discord API)**, designed to assist members of the **Pixel Haven** server with automation, moderation, and utility features to improve community engagement and server management.
+**Axiom Core** is an intelligent AI-powered Discord bot designed to manage, optimize, and grow **Axiom Network** — a developer-focused community centered around **Java**, **Computer Science**, and **modern software engineering**.
 
----
-
-# ✨ Features
-
-* 🤖 Member Assistance Commands
-* 🎉 Welcome Message System *(Coming Soon)*
-* 🛠️ Utility Commands
-* ⚙️ Modular Architecture
-* 🚀 Scalable Bot Structure
+Unlike traditional Discord bots, Axiom Core acts as an **AI Community Manager**, assisting developers, moderating intelligently, and continuously improving the server environment.
 
 ---
 
-# 🛠️ Tech Stack
+# 🚀 Features
 
-* Java 21
-* JDA (Java Discord API)
-* Maven
+## 🧠 AI-Powered Intelligence
+
+* Intelligent moderation (toxicity, spam, trolling detection)
+* Smart developer assistance
+* Context-aware responses
+* Automated decision making
+
+## 💻 Developer-Focused Assistance
+
+* Java development support
+* Computer Science guidance
+* Backend & Spring Boot help
+* System design discussions
+* Coding best practices
+
+## 🛡️ Smart Moderation
+
+* Spam detection
+* Toxicity filtering
+* Automated warnings
+* Smart message handling
+* Server health monitoring
+
+## 📈 Community Growth Engine
+
+* Intelligent onboarding
+* Activity analysis
+* Engagement optimization
+* Channel organization suggestions
+* Growth insights
+
+## ⚙️ Autonomous Server Management
+
+* Role management
+* Channel optimization
+* Activity monitoring
+* Community quality enforcement
+
+---
+
+# 🎯 Purpose
+
+Axiom Core is built to transform **Axiom Network** into a **high-quality developer ecosystem** by:
+
+* Assisting developers
+* Encouraging technical discussions
+* Maintaining professional standards
+* Supporting learning and collaboration
+* Optimizing community growth
+
+---
+
+# 🧬 Philosophy
+
+Axiom Core is not just a bot — it's the **intelligence layer** of Axiom Network.
+
+> Built for developers
+> Designed for growth
+> Powered by AI
+
+---
+
+# 🏗️ Architecture
+
+```
+Discord Server
+     ↓
+Axiom Core Bot
+     ↓
+Event Listener
+     ↓
+AI Engine (Gemini)
+     ↓
+Decision Engine
+     ↓
+Discord Actions
+```
+
+---
+
+# 🛠️ Core Capabilities
+
+* AI moderation
+* Developer assistance
+* Server optimization
+* Smart automation
+* Growth analytics
+* Intelligent onboarding
+
+---
+
+# 🎓 Focus Areas
+
+* Java Development
+* Spring Boot
+* Computer Science
+* Data Structures & Algorithms
+* System Design
+* Backend Development
+* Software Engineering
+
+---
+
+# 📌 Bot Identity
+
+**Name:** Axiom Core
+**Server:** Axiom Network
+**Role:** AI Community Manager
+**Purpose:** Growth, Intelligence, Automation
+
+---
+
+# 🔮 Future Roadmap
+
+## Phase 1
+
+* AI moderation
+* Developer assistance
+* Smart responses
+
+## Phase 2
+
+* Growth analytics
+* Server insights
+* Auto optimization
+
+## Phase 3
+
+* Multi-agent AI system
+* Autonomous server management
+* Advanced developer tools
+
+---
+
+# 🤖 Powered By
+
+* Gemini AI
 * Discord API
+* Custom Intelligence Engine
 
 ---
 
-# 📂 Project Structure
+# 📈 Vision
 
-```
-PixBuddyBot
-├── src
-│   ├── main
-│   │   ├── java
-│   │   │   ├── Config.java
-│   │   │   └── PixBuddyBot.java
-│   │   └── resources
-│   │       └── application.properties
-├── pom.xml
-└── .gitignore
-```
+Axiom Network aims to become a **high-quality developer community** where:
+
+* Developers collaborate
+* Knowledge flows freely
+* Discussions stay meaningful
+* Learning accelerates
+
+Axiom Core ensures this vision is maintained and improved continuously.
 
 ---
 
-# ⚙️ Setup & Installation
+# 🧠 Axiom Core
 
-## 1. Clone Repository
-
-```bash
-git clone https://github.com/PravinChoudhary11/PixBuddyBot.git
-cd PixBuddyBot
-```
-
----
-
-## 2. Create application.properties
-
-Create file:
-
-```
-src/main/resources/application.properties
-```
-
-Add:
-
-```properties
-discord.token=YOUR_DISCORD_BOT_TOKEN
-```
-
----
-
-## 3. Run Bot
-
-Using IntelliJ / IDE:
-
-Run:
-
-```
-PixBuddyBot.java
-```
-
-Or using Maven:
-
-```bash
-mvn compile
-mvn exec:java
-```
-
----
-
-# 🚀 Current Commands
-
-| Command | Description      |
-| ------- | ---------------- |
-| !help   | Show help menu   |
-| !ping   | Check bot status |
-
-*(More commands coming soon)*
-
----
-
-# 🎯 Roadmap
-
-* [ ] Welcome Message
-* [ ] Slash Commands
-* [ ] Auto Roles
-* [ ] Moderation Commands
-* [ ] Ticket System
-* [ ] AI Assistant
-
----
-
-# 🖼️ PixBuddy
-
-PixBuddy is the official helper bot for **Pixel Haven** — designed to assist, automate, and enhance community experience.
-
----
-
-# 👨‍💻 Author
-
-**Pravin Choudhary**
-
-GitHub:
-https://github.com/PravinChoudhary11
-
----
-
-# ⭐ Contributing
-
-Contributions are welcome!
-Feel free to fork and submit pull requests.
-
----
-
-# 📜 License
-
-This project is licensed under the MIT License.
-
----
-
-# 🚀 PixBuddy
-
-**Your Friendly Pixel Haven Helper Bot**
+**The Intelligence Behind Axiom Network**
